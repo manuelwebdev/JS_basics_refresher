@@ -70,3 +70,7 @@ console.log(manuelOlder);
 
 //typeof operator
 console.log(typeof manuelOlder);
+console.log(typeof ageMark);
+console.log(typeof 'Manuel is younger than Mark');
+var x;
+console.log(typeof x);
