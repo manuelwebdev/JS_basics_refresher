@@ -21,37 +21,49 @@
 * Variable mutations and type coercion
 */
 
-var fName = 'manuel';
-var age = 23;
+// var fName = 'manuel';
+// var age = 23;
 
-console.log(fName + ' ' + age);
+// console.log(fName + ' ' + age);
 
-var job, isMarried;
-job =  'teacher';
-isMarried = false;
+// var job, isMarried;
+// job =  'teacher';
+// isMarried = false;
 
-console.log(fName + ' is a ' + age + ' years old ' + job + '. Is he married?' +isMarried);
+// console.log(fName + ' is a ' + age + ' years old ' + job + '. Is he married?' +isMarried);
 
-/* Variable mutation */
+// /* Variable mutation */
 
-age = 'twenty three';
-job = 'driver';
+// age = 'twenty three';
+// job = 'driver';
 
-alert(fName + ' is a ' + age + ' years old ' + job + '. Is he married? ' +isMarried);
+// alert(fName + ' is a ' + age + ' years old ' + job + '. Is he married? ' +isMarried);
 
-var lName = prompt('What is your last name?');
-console.log(fName + ' ' + lName);
+// var lName = prompt('What is your last name?');
+// console.log(fName + ' ' + lName);
 
 
 /***************
  * Basic operators
  */
 
- var year, yearManuel, yearZajit;
- var year = 2019;
- var yearManuel = year - 23;
- var yearZajit = year - 33;
+ var year, yearManuel, yearMark;
+ now = 2019;
+ ageManuel = 23;
+ ageMark = 30;
+
+//  Math operators
+ yearManuel = now - 23;
+ yearMark = now - 33;
+
 
  console.log(yearManuel);
 
- console.log()
+ console.log(now + 2);
+ console.log(now * 2);
+ console.log(now / 10);
+
+//Logical operators
+var manuelOlder = ageManuel > ageMark;
+var manuelOlder = ageManuel < ageMark;
+console.log(manuelOlder);
