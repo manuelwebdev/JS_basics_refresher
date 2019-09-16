@@ -67,3 +67,6 @@
 var manuelOlder = ageManuel > ageMark;
 var manuelOlder = ageManuel < ageMark;
 console.log(manuelOlder);
+
+//typeof operator
+console.log(typeof manuelOlder);
