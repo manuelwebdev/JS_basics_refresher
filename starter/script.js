@@ -200,3 +200,62 @@ if (age < 13) {
 } else {
     console.log(fName + ' is a man.');
 }
+
+
+
+
+
+/*********************
+ * The Ternary Operator and Switch statements
+ */
+
+var fName = 'Manuel';
+var age = 16;
+
+// Ternary operator
+age >= 21 ? console.log(fName + ' drinks beer.') : console.log(fName + ' drinks water.');
+
+var drink = age >= 21 ? 'beer' : 'juice';
+console.log(drink);
+
+/* if (age >= 18) {
+     var drink = 'beer';
+ } else {
+     var drink = 'juice';
+ }
+ */
+
+// Switch statement
+var job = 'instructor';
+switch (job) {
+    case 'teacher': // teacher and instructor both out put the same message from line 233.
+    case 'instructor':
+        console.log(fName + ' teaches kids how to code');
+        break;
+    case 'driver':
+        console.log(fName + ' drives an Uber');
+        break;
+    case 'designer':
+        console.log(fName + ' designs beautiful websites');
+        break;
+
+    default:
+        console.log(fName + ' does something else')
+}
+
+age = 15;
+switch (true) {
+    case age < 13:
+        console.log(fName + ' is a boy.');
+        break;
+    case age >= 13 && age < 20:
+        console.log(fName + ' is a teenager.');
+        break;
+    case age >= 20 && age < 30:
+        console.log(fName + ' is a young man.');
+        break;
+
+    default:
+        console.log(fName + ' is a man.');
+        break;
+}
