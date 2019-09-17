@@ -1,6 +1,6 @@
 /*****************
-* Variables and data types
-*/
+ * Variables and data types
+ */
 // var fName = 'manuel';
 // console.log(fName);
 
@@ -18,8 +18,8 @@
 
 
 /*****************
-* Variable mutations and type coercion
-*/
+ * Variable mutations and type coercion
+ */
 
 // var fName = 'manuel';
 // var age = 23;
@@ -146,21 +146,21 @@
 
 
 
- /*********************
-  * if / else Statements
-  */
+/*********************
+ * if / else Statements
+ */
 
-  var fName = 'Manuel';
-  var civilStatus = 'single';
+var fName = 'Manuel';
+var civilStatus = 'single';
 
-  if (civilStatus === 'married') {
-      console.log(fName + ' is married');
-  } else {
-      console.log(fName + ' will hopefully marry soon :)');
-  }
+if (civilStatus === 'married') {
+    console.log(fName + ' is married');
+} else {
+    console.log(fName + ' will hopefully marry soon :)');
+}
 
-  var isMarried = true;
-  if (isMarried) {
+var isMarried = true;
+if (isMarried) {
     console.log(fName + ' is married');
 } else {
     console.log(fName + ' will hopefully marry soon :)');
@@ -168,19 +168,35 @@
 
 
 var massMark, massJohn, heightMark, heightJohn;
- massMark = 200;
- massJohn = 150;
- heightMark = 6;
- heightJohn = 7;
+massMark = 200;
+massJohn = 150;
+heightMark = 6;
+heightJohn = 7;
 
- markBMI = massMark / heightMark ** 2;
- johnBMI = massJohn / heightJohn ** 2;
-
-//  var isJohnHigher = johnBMI > markBMI;
-//  console.log('Is john\'s bmi higher than mark\'s? ' + isJohnHigher);
+markBMI = massMark / heightMark ** 2;
+johnBMI = massJohn / heightJohn ** 2;
 
 if (markBMI > johnBMI) {
     console.log('Mark\'s BMI is higher than John\'s. ');
 } else {
     console.log('John\'s BMI is higher than Mark\'s. ');
+}
+
+
+
+/*********************
+ * Boolean logic
+ */
+
+var fName = 'Manuel';
+var age = 20;
+
+if (age < 13) {
+    console.log(fName + ' is a boy.');
+} else if (age >= 13 && age < 20) { // between 13 and 20 // age >= 13 AND age < 20
+    console.log(fName + ' is a teenager.');
+} else if (age >= 20 && age < 30) { // between 13 and 20 // age >= 13 AND age < 20
+    console.log(fName + ' is a young man.');
+} else {
+    console.log(fName + ' is a man.');
 }
