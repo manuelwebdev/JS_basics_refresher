@@ -81,39 +81,39 @@
  * Operator precedence
  */
 
-var now = 2019;
-var yearManuel = 1996;
-var fullAge = 23;
+// var now = 2019;
+// var yearManuel = 1996;
+// var fullAge = 23;
 
-// Multiple operators
-var isFullAge = now - yearManuel >= fullAge; // true
-console.log(isFullAge);
+// // Multiple operators
+// var isFullAge = now - yearManuel >= fullAge; // true
+// console.log(isFullAge);
 
 // Grouping
-var ageManuel = now - yearManuel;
-var ageMark = 35;
-var average = (ageManuel + ageMark) / 2;
-console.log(average);
+// var ageManuel = now - yearManuel;
+// var ageMark = 35;
+// var average = (ageManuel + ageMark) / 2;
+// console.log(average);
 
 //Multiple assignments
-var x, y;
-x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
-console.log(x, y);
+// var x, y;
+// x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
+// console.log(x, y);
 
 /***************
  * More operators
  */
 
 // x = x * 2;
-x *= 2;
-console.log(x);
-x += 10;
-console.log(x);
+// x *= 2;
+// console.log(x);
+// x += 10;
+// console.log(x);
 
 // x = x +1;
 // x += 1;
-x--;
-console.log(x);
+// x--;
+// console.log(x);
 
 
 
@@ -128,17 +128,59 @@ console.log(x);
  * CODING CHALLENGE 1
  */
 
- var massMark, massJohn, heightMark, heightJohn;
- massMark = 100;
+//  var massMark, massJohn, heightMark, heightJohn;
+//  massMark = 100;
+//  massJohn = 150;
+//  heightMark = 6;
+//  heightJohn = 7;
+//  console.log(massMark, massJohn, heightMark, heightJohn);
+
+//  markBMI = massMark / heightMark ** 2;
+//  console.log('Mark\'s bmi = ' + markBMI);
+//  johnBMI = massJohn / heightJohn ** 2;
+//  console.log('John\'s bmi = ' + johnBMI);
+
+//  var isJohnHigher = johnBMI > markBMI;
+//  console.log('Is john\'s bmi higher than mark\'s? ' + isJohnHigher);
+
+
+
+
+ /*********************
+  * if / else Statements
+  */
+
+  var fName = 'Manuel';
+  var civilStatus = 'single';
+
+  if (civilStatus === 'married') {
+      console.log(fName + ' is married');
+  } else {
+      console.log(fName + ' will hopefully marry soon :)');
+  }
+
+  var isMarried = true;
+  if (isMarried) {
+    console.log(fName + ' is married');
+} else {
+    console.log(fName + ' will hopefully marry soon :)');
+}
+
+
+var massMark, massJohn, heightMark, heightJohn;
+ massMark = 200;
  massJohn = 150;
  heightMark = 6;
  heightJohn = 7;
- console.log(massMark, massJohn, heightMark, heightJohn);
 
  markBMI = massMark / heightMark ** 2;
- console.log('Mark\'s bmi = ' + markBMI);
  johnBMI = massJohn / heightJohn ** 2;
- console.log('John\'s bmi = ' + johnBMI);
 
- var isJohnHigher = johnBMI > markBMI;
- console.log('Is john\'s bmi higher than mark\'s? ' + isJohnHigher);
+//  var isJohnHigher = johnBMI > markBMI;
+//  console.log('Is john\'s bmi higher than mark\'s? ' + isJohnHigher);
+
+if (markBMI > johnBMI) {
+    console.log('Mark\'s BMI is higher than John\'s. ');
+} else {
+    console.log('John\'s BMI is higher than Mark\'s. ');
+}
