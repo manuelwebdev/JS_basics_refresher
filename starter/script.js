@@ -292,9 +292,9 @@ jA = 89; //89
 jB = 120; //120
 jC = 503; //103
 
-mA = 116; //116
-mB = 94; //94
-mC = 50; //123
+mA = 89; //116
+mB = 120; //94
+mC = 503; //123
 
 maA = 97; //97
 maB = 134; //134
@@ -317,6 +317,6 @@ if (jAve > mAve && jAve > maAve) {
     console.log('Mike WINS! (' + mAve + '). John: ' + jAve + ' and Mary: ' + maAve);
 } else if (maAve > mAve && maAve > jAve) {
     console.log('Mary WINS! (' + maAve + '). John: ' + jAve + ' and Mike: ' + mAve);
-} else if () {
-    
+} else if (jAve === mAve && (jAve, mAve) > maAve) {
+    console.log('John and Mike tie')
 }
