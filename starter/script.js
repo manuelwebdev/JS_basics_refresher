@@ -320,3 +320,45 @@ if (jAve > mAve && jAve > maAve) {
 } else if (jAve === mAve && (jAve, mAve) > maAve) {
     console.log('John and Mike tie')
 }
+
+
+
+
+/*****************************
+ * Functions
+ */
+
+ function calculateAge(birthYear) {
+     return 2019 - birthYear;
+ }
+
+ var ageManuel = calculateAge(1996);
+ var ageMike = calculateAge(1935);
+ var ageMary = calculateAge(1969);
+
+ console.log(ageManuel, ageMike, ageMary);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
