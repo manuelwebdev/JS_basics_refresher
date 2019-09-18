@@ -328,17 +328,17 @@ if (jAve > mAve && jAve > maAve) {
  * Functions
  */
 
- function calculateAge(birthYear) {
-     return 2019 - birthYear;
- }
+function calculateAge(birthYear) {
+    return 2019 - birthYear;
+}
 
- var ageManuel = calculateAge(1996);
- var ageMike = calculateAge(1935);
- var ageMary = calculateAge(1969);
+var ageManuel = calculateAge(1996);
+var ageMike = calculateAge(1935);
+var ageMary = calculateAge(1969);
 
- console.log(ageManuel, ageMike, ageMary);
+console.log(ageManuel, ageMike, ageMary);
 
- function yearsUntilRetirement(year, firstName) {
+function yearsUntilRetirement(year, firstName) {
 
     var age = calculateAge(year);
     var retire = 65 - age;
@@ -351,33 +351,40 @@ if (jAve > mAve && jAve > maAve) {
 
     }
 
- }
+}
 
- yearsUntilRetirement(1996, 'Manuel');
- yearsUntilRetirement(1945, 'Mike');
- yearsUntilRetirement(1960, 'Mary');
-
-
+yearsUntilRetirement(1996, 'Manuel');
+yearsUntilRetirement(1945, 'Mike');
+yearsUntilRetirement(1960, 'Mary');
 
 
 
 
+/******************************
+ * Function Statements and Expressions
+ */
 
+//Function declaration
+//   var function whatDoYouDo(job, firstName) {}
 
+//function expression
+var whatDoYouDo = function (job, firstName) {
+    switch (job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code';
 
+        case 'driver':
+            return firstName + ' drives a taxi in Dublin';
+        
+        case 'designer':
+            return firstName + ' designs beautiful websites'
+    
+        default:
+            return firstName + ' does something else'
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(whatDoYouDo('teacher','Manuel'));
+console.log(whatDoYouDo('driver','Mary'));
+console.log(whatDoYouDo('designer','John'));
+console.log(whatDoYouDo('janitor','Jane'));
