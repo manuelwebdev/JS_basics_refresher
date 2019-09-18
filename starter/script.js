@@ -261,23 +261,23 @@ switch (true) {
  * Truthy and Falsy values and equality operators
  */
 
- // falsy values: undefined, null, 0, '', NaN
- // truthy values: NOT falsy values
+// falsy values: undefined, null, 0, '', NaN
+// truthy values: NOT falsy values
 
- var height;
- height = 23;
+var height;
+height = 23;
 
- if (height || height === 0) {
-     console.log('Variable is defined');
- } else {
-     console.log('Variable has NOT been defined');
- }
+if (height || height === 0) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has NOT been defined');
+}
 
 
 // Equality operators
 if (height == '23') {
     console.log('The == operator does type coercion!');
-} 
+}
 
 
 
@@ -287,38 +287,36 @@ if (height == '23') {
  */
 
 
- var jA, jB, jC, mA, mB, mC;
- jA = 89;
- jB = 120;
- jC = 103;
+var jA, jB, jC, mA, mB, mC, maA, maB, maC;
+jA = 89; //89
+jB = 120; //120
+jC = 503; //103
 
- mA = 116;
- mB = 94;
- mC = 123;
+mA = 116; //116
+mB = 94; //94
+mC = 50; //123
 
- jAve = (jA + jB + jC) / 3;
- console.log(jAve);
+maA = 97; //97
+maB = 134; //134
+maC = 105 //105
 
- mAve = (mA + mB + mC) / 3;
- console.log(mAve);
+jAve = (jA + jB + jC) / 3;
+console.log(jAve);
 
- if (jAve > mAve) {
-     console.log('John scored ' + jAve + ', which was higher than Mike\'s ' + mAve + ' points.');
- } else {
-     console.log('Mike scored ' + mAve + ', which was higher than John\'s ' + jAve + ' points.');
- }
+mAve = (mA + mB + mC) / 3;
+console.log(mAve);
 
+maAve = (maA + maB + maC) / 3;
+console.log(maAve);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+if (jAve > mAve && jAve > maAve) {
+    console.log('John WINS! (' + jAve + '). Mike: ' + mAve + ' and Mary: ' + maAve);
+} else if (jAve === mAve === maAve) {
+    console.log('Mike, John, and Mary tied.');
+} else if (mAve > jAve && mAve > maAve) {
+    console.log('Mike WINS! (' + mAve + '). John: ' + jAve + ' and Mary: ' + maAve);
+} else if (maAve > mAve && maAve > jAve) {
+    console.log('Mary WINS! (' + maAve + '). John: ' + jAve + ' and Mike: ' + mAve);
+} else if () {
+    
+}
