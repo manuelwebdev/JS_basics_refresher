@@ -338,6 +338,14 @@ if (jAve > mAve && jAve > maAve) {
 
  console.log(ageManuel, ageMike, ageMary);
 
+ function yearsUntilRetirement(year, firstName) {
+
+    var age = calculateAge(year);
+    var retire = 65 - age;
+    console.log(firstName + 'retires in ' + retire + ' years.');
+ }
+
+ yearsUntilRetirement(1996, 'Manuel');
 
 
 
