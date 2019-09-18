@@ -145,7 +145,6 @@
 
 
 
-
 /*********************
  * if / else Statements
  */
@@ -200,9 +199,6 @@ if (age < 13) {
 } else {
     console.log(fName + ' is a man.');
 }
-
-
-
 
 
 /*********************
