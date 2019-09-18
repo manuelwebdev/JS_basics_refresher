@@ -282,6 +282,34 @@ if (height == '23') {
 
 
 
+/***************************
+ * CODING CHALLENGE 2
+ */
+
+
+ var jA, jB, jC, mA, mB, mC;
+ jA = 89;
+ jB = 120;
+ jC = 103;
+
+ mA = 116;
+ mB = 94;
+ mC = 123;
+
+ jAve = (jA + jB + jC) / 3;
+ console.log(jAve);
+
+ mAve = (mA + mB + mC) / 3;
+ console.log(mAve);
+
+ if (jAve > mAve) {
+     console.log('John scored ' + jAve + ', which was higher than Mike\'s ' + mAve + ' points.');
+ } else {
+     console.log('Mike scored ' + mAve + ', which was higher than John\'s ' + jAve + ' points.');
+ }
+
+
+
 
 
 
