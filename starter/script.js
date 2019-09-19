@@ -375,16 +375,16 @@ var whatDoYouDo = function (job, firstName) {
 
         case 'driver':
             return firstName + ' drives a taxi in Dublin';
-        
+
         case 'designer':
             return firstName + ' designs beautiful websites'
-    
+
         default:
             return firstName + ' does something else'
     }
 }
 
-console.log(whatDoYouDo('teacher','Manuel'));
-console.log(whatDoYouDo('driver','Mary'));
-console.log(whatDoYouDo('designer','John'));
-console.log(whatDoYouDo('janitor','Jane'));
+console.log(whatDoYouDo('teacher', 'Manuel'));
+console.log(whatDoYouDo('driver', 'Mary'));
+console.log(whatDoYouDo('designer', 'John'));
+console.log(whatDoYouDo('janitor', 'Jane'));
