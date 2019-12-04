@@ -388,3 +388,13 @@ console.log(whatDoYouDo('teacher', 'Manuel'));
 console.log(whatDoYouDo('driver', 'Mary'));
 console.log(whatDoYouDo('designer', 'John'));
 console.log(whatDoYouDo('janitor', 'Jane'));
+
+
+/******************************
+ * Arrays
+ */
+
+ var names = ['John', 'Mark', 'Jane'];
+ var years = new Array(1996, 1969, 1948);
+
+ 
