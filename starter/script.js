@@ -397,4 +397,15 @@ console.log(whatDoYouDo('janitor', 'Jane'));
  var names = ['John', 'Mark', 'Jane'];
  var years = new Array(1996, 1969, 1948);
 
- 
+ console.log(names.length);
+
+// Mutate array data
+ names[1] = 'Ben';
+ names[names.length] = 'Mary';
+ console.log(names);
+
+ // Different data types
+ var john = ['John', 'Smith', 1990, 'teacher', false];
+
+ john.push('blue');
+ console.log(john);
