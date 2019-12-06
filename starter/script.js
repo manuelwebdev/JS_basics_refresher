@@ -435,5 +435,31 @@ console.log(isDesigner);
  var bill = [124, 48, 268];
 
  function tipCalculator(bill) {
-     
+     var percent;
+     if (bill < 50) {
+         percent = .2;
+     } else if (bill > 50 && bill <= 200) {
+         percent = .15;
+     } else {
+         percent = .1;
+     }
+     return percent * bill;
  }
+
+//  function tipCalcSwitch(bill) {
+//     var percent;
+//     switch (job) {
+//         case bill < 50:
+//             percent = .2;
+//             break;
+//         case bill > 50 && bill <= 200;
+//             percent = .15;
+//             break;
+    
+//         default:
+//             percent = .1;
+//             break;
+//     }
+
+//     return percent * bill; 
+//  }
