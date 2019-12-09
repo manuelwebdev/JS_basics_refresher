@@ -432,8 +432,6 @@ console.log(isDesigner);
  * Coding Challenge 3
  */
 
- var bill = [124, 48, 268];
-
  function tipCalculator(bill) {
      var percent;
      if (bill < 50) {
@@ -446,6 +444,8 @@ console.log(isDesigner);
      return percent * bill;
  }
 
+ var bill = [124, 48, 268];
+ var tips = []
 //  function tipCalcSwitch(bill) {
 //     var percent;
 //     switch (job) {
