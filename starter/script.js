@@ -432,34 +432,53 @@ console.log(isDesigner);
  * Coding Challenge 3
  */
 
- function tipCalculator(bill) {
-     var percent;
-     if (bill < 50) {
-         percent = .2;
-     } else if (bill > 50 && bill <= 200) {
-         percent = .15;
-     } else {
-         percent = .1;
-     }
-     return percent * bill;
+//  function tipCalculator(bill) {
+//      var percent;
+//      if (bill < 50) {
+//          percent = .2;
+//      } else if (bill > 50 && bill < 200) {
+//          percent = .15;
+//      } else {
+//          percent = .1;
+//      }
+//      return percent * bill;
+//  }
+
+//  var bill = [124, 48, 268];
+//  var tips = [tipCalculator(bill[0]),
+//              tipCalculator(bill[1]),
+//              tipCalculator(bill[2])];
+//  var finalBill = [bill[0] + tips[0],
+//                   bill[1] + tips[1],
+//                   bill[2] + tips[2]];
+
+//  console.log(tips, finalBill);
+
+
+
+ function tipCalcSwitch(bill) {
+    var percent;
+    switch (bill) {
+        case bill < 50:
+            percent = .2;
+            break;
+        case bill > 50 && bill < 200:
+            percent = .15;
+            break;
+        default:
+            percent = .1;
+            break;
+    }
+
+    return percent * bill; 
  }
 
  var bill = [124, 48, 268];
- var tips = []
-//  function tipCalcSwitch(bill) {
-//     var percent;
-//     switch (job) {
-//         case bill < 50:
-//             percent = .2;
-//             break;
-//         case bill > 50 && bill <= 200;
-//             percent = .15;
-//             break;
-    
-//         default:
-//             percent = .1;
-//             break;
-//     }
+ var tips = [tipCalcSwitch(bill[0]),
+             tipCalcSwitch(bill[1]),
+             tipCalcSwitch(bill[2])];
+ var finalBill = [bill[0] + tips[0],
+                  bill[1] + tips[1],
+                  bill[2] + tips[2]];
 
-//     return percent * bill; 
-//  }
+ console.log(tips, finalBill);
