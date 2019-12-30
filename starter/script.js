@@ -432,27 +432,27 @@ console.log(isDesigner);
  * Coding Challenge 3
  */
 
-//  function tipCalculator(bill) {
-//      var percent;
-//      if (bill < 50) {
-//          percent = .2;
-//      } else if (bill > 50 && bill < 200) {
-//          percent = .15;
-//      } else {
-//          percent = .1;
-//      }
-//      return percent * bill;
-//  }
+ function tipCalculator(bill) {
+     var percent;
+     if (bill < 50) {
+         percent = .2;
+     } else if (bill > 50 && bill < 200) {
+         percent = .15;
+     } else {
+         percent = .1;
+     }
+     return percent * bill;
+ }
 
-//  var bill = [124, 48, 268];
-//  var tips = [tipCalculator(bill[0]),
-//              tipCalculator(bill[1]),
-//              tipCalculator(bill[2])];
-//  var finalBill = [bill[0] + tips[0],
-//                   bill[1] + tips[1],
-//                   bill[2] + tips[2]];
+ var bill = [124, 48, 268];
+ var tips = [tipCalculator(bill[0]),
+             tipCalculator(bill[1]),
+             tipCalculator(bill[2])];
+ var finalBill = [bill[0] + tips[0],
+                  bill[1] + tips[1],
+                  bill[2] + tips[2]];
 
-//  console.log(tips, finalBill);
+ console.log(tips, finalBill);
 
 
 
@@ -482,3 +482,21 @@ console.log(isDesigner);
                   bill[2] + tips[2]];
 
  console.log(tips, finalBill);
+
+
+
+ /************************
+  * Objects and properties
+  */
+
+var john = {
+    firstName: 'john',
+    lastName: 'smith',
+    birthYear: '1990',
+    family: ['jane', 'bob', 'sally'],
+    job: 'teacher',
+    isMarried: false
+};
+console.log(john.firstName);
+
+
