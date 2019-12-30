@@ -498,5 +498,19 @@ var john = {
     isMarried: false
 };
 console.log(john.firstName);
+console.log(john['lastName']);
+var x = 'birthYear';
+console.log(john[x]);
+
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
+
+var jane = new Object();
+jane.name = 'jane';
+jane.birthYear = '1990';
+jane['lastName'] = 'smith';
+console.log(jane);
+
 
 
