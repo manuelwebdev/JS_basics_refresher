@@ -670,5 +670,31 @@ var john = ['John', 'Smith', 1990, 'teacher', false, 'blue'];
      }
  }
 
+ var markBill = {
+     fullName: "Mark Brandonoquitz",
+     bill: [77, 375, 110, 45],
+     calcTip: function () {
+        this.tip = [];
+        this.final = [];
+
+         for (var i = 0; i < this.bill.length; i++) {
+             var percentage;
+             var myBill = this.bill[i]; 
+
+             if (myBill < 100) {
+                percentage = .2;
+             } else if (myBill >= 100 && myBill < 300) {
+                percentage = .1;
+             } else {
+                percentage = .25;
+             }
+
+             this.tip[i] = myBill * percentage;
+             this.final[i] = myBill + myBill * percentage;
+         }
+     }
+
+ }
+
  johnBill.calcTip();
  console.log(johnBill);
