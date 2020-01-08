@@ -595,8 +595,8 @@ if (john.bodyMassIndex() > mark.bodyMassIndex()) {
  var john = ['John', 'Smith', 1990, 'teacher', false];
  console.log(john[0]);
 
- for (var i = 0; i < array.length; i++) {
-     const element = array[i];
+ for (var i = 0; i < john.length; i++) {
+     console.log(john[i]);
      
  }
 
