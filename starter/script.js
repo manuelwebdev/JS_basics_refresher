@@ -614,12 +614,61 @@ for (var i = 0; i < 10; i++) {
 
 var john = ['John', 'Smith', 1990, 'teacher', false, 'blue'];
 
-for (var i = 0; i < john.length; i++) {
-    if (typeof john[i] !== 'string') continue;
-    console.log(john[i]);
-}
+// for (var i = 0; i < john.length; i++) {
+//     if (typeof john[i] !== 'string') continue;
+//     console.log(john[i]);
+// }
 
-for (var i = 0; i < john.length; i++) {
-    if (typeof john[i] !== 'string') break;
-    console.log(john[i]);
-}
+// for (var i = 0; i < john.length; i++) {
+//     if (typeof john[i] !== 'string') break;
+//     console.log(john[i]);
+// }
+
+/********
+ * mini challenge to reverse array order
+ */
+
+//  for (var i = john.length - 1; i >= 0; i--) {
+//      console.log(john[i]);
+     
+//  }
+
+
+
+
+
+
+
+
+/***********************************
+ * CODING CHALLENGE 5
+ */
+
+ var johnBill = {
+     bill: [124, 48, 268, 180, 42],
+     tip: [],
+     final: [],
+     calcTip: function () {
+        this.tip = [];
+        this.final = [];
+
+         for (var i = 0; i < this.bill.length; i++) {
+             var percentage;
+             var myBill = this.bill[i]; 
+
+             if (myBill < 50) {
+                percentage = .2;
+             } else if (myBill >= 50 && myBill < 200) {
+                percentage = .15;
+             } else {
+                percentage = .1;
+             }
+
+             this.tip[i] = myBill * percentage;
+             this.final[i] = myBill + myBill * percentage;
+         }
+     }
+ }
+
+ johnBill.calcTip();
+ console.log(johnBill);
