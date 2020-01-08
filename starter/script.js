@@ -582,12 +582,12 @@ if (john.bodyMassIndex() > mark.bodyMassIndex()) {
  * Loops and Iterations
  */
 
- //FOR LOOP
+//FOR LOOP
 
-for (var i = 0; i < 10; i++) {
-    console.log(i);
+// for (var i = 0; i < 10; i++) {
+//     console.log(i);
 
-}
+// }
 // i = 0, 0 < 10 true, log i to console, i++
 // i = 1, 0 < 10 true, log i to console, i++
 //...
@@ -612,7 +612,7 @@ for (var i = 0; i < 10; i++) {
 
 // Continue and Break statements
 
-var john = ['John', 'Smith', 1990, 'teacher', false, 'blue'];
+// var john = ['John', 'Smith', 1990, 'teacher', false, 'blue'];
 
 // for (var i = 0; i < john.length; i++) {
 //     if (typeof john[i] !== 'string') continue;
@@ -630,7 +630,7 @@ var john = ['John', 'Smith', 1990, 'teacher', false, 'blue'];
 
 //  for (var i = john.length - 1; i >= 0; i--) {
 //      console.log(john[i]);
-     
+
 //  }
 
 
@@ -644,57 +644,81 @@ var john = ['John', 'Smith', 1990, 'teacher', false, 'blue'];
  * CODING CHALLENGE 5
  */
 
- var johnBill = {
-     bill: [124, 48, 268, 180, 42],
-     tip: [],
-     final: [],
-     calcTip: function () {
+var johnBill = {
+    fullName: "John Smith",
+    bill: [124, 48, 268, 180, 42],
+    calcTip: function () {
         this.tip = [];
         this.final = [];
 
-         for (var i = 0; i < this.bill.length; i++) {
-             var percentage;
-             var myBill = this.bill[i]; 
+        for (var i = 0; i < this.bill.length; i++) {
+            var percentage;
+            var myBill = this.bill[i];
 
-             if (myBill < 50) {
+            if (myBill < 50) {
                 percentage = .2;
-             } else if (myBill >= 50 && myBill < 200) {
+            } else if (myBill >= 50 && myBill < 200) {
                 percentage = .15;
-             } else {
+            } else {
                 percentage = .1;
-             }
+            }
 
-             this.tip[i] = myBill * percentage;
-             this.final[i] = myBill + myBill * percentage;
-         }
-     }
- }
+            this.tip[i] = myBill * percentage;
+            this.final[i] = myBill + myBill * percentage;
+        }
+    }
+}
 
- var markBill = {
-     fullName: "Mark Brandonoquitz",
-     bill: [77, 375, 110, 45],
-     calcTip: function () {
+var markBill = {
+    fullName: "Mark Brandonoquitz",
+    bill: [77, 375, 110, 45],
+    calcTip: function () {
         this.tip = [];
         this.final = [];
 
-         for (var i = 0; i < this.bill.length; i++) {
-             var percentage;
-             var myBill = this.bill[i]; 
+        for (var i = 0; i < this.bill.length; i++) {
+            var percentage;
+            var myBill = this.bill[i];
 
-             if (myBill < 100) {
+            if (myBill < 100) {
                 percentage = .2;
-             } else if (myBill >= 100 && myBill < 300) {
+            } else if (myBill >= 100 && myBill < 300) {
                 percentage = .1;
-             } else {
+            } else {
                 percentage = .25;
-             }
+            }
 
-             this.tip[i] = myBill * percentage;
-             this.final[i] = myBill + myBill * percentage;
-         }
-     }
+            this.tip[i] = myBill * percentage;
+            this.final[i] = myBill + myBill * percentage;
+        }
+    }
 
- }
+}
 
- johnBill.calcTip();
- console.log(johnBill);
+johnBill.calcTip();
+// console.log(johnBill);
+
+function calcAvg(tip) {
+    var sum = 0;
+    for (var i = 0; i < tip.length; i++) {
+        sum += tip[i];
+        
+    }
+    return sum / tip.length;
+}
+
+//CALCULATION TESTS
+johnBill.calcTip();
+markBill.calcTip();
+
+johnBill.average = calcAvg(johnBill.tip);
+markBill.average = calcAvg(markBill.tip);
+console.log(johnBill, markBill);
+
+if (johnBill.average > markBill.average) {
+    console.log(johnBill.fullName + '\'s family pays higher tips, with an average of $' + johnBill.average);
+} else if (johnBill.average < markBill.average) {
+    console.log(markBill.fullName + '\'s family pays higher tips, with an average of $' + markBill.average);
+} else {
+    console.log('both parties tip the same amount');
+}
