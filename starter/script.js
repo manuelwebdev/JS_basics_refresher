@@ -432,31 +432,33 @@ console.log(isDesigner);
  * Coding Challenge 3
  */
 
- function tipCalculator(bill) {
-     var percent;
-     if (bill < 50) {
-         percent = .2;
-     } else if (bill > 50 && bill < 200) {
-         percent = .15;
-     } else {
-         percent = .1;
-     }
-     return percent * bill;
- }
+function tipCalculator(bill) {
+    var percent;
+    if (bill < 50) {
+        percent = .2;
+    } else if (bill > 50 && bill < 200) {
+        percent = .15;
+    } else {
+        percent = .1;
+    }
+    return percent * bill;
+}
 
- var bill = [124, 48, 268];
- var tips = [tipCalculator(bill[0]),
-             tipCalculator(bill[1]),
-             tipCalculator(bill[2])];
- var finalBill = [bill[0] + tips[0],
-                  bill[1] + tips[1],
-                  bill[2] + tips[2]];
+var bill = [124, 48, 268];
+var tips = [tipCalculator(bill[0]),
+    tipCalculator(bill[1]),
+    tipCalculator(bill[2])
+];
+var finalBill = [bill[0] + tips[0],
+    bill[1] + tips[1],
+    bill[2] + tips[2]
+];
 
- console.log(tips, finalBill);
+console.log(tips, finalBill);
 
 
 
- function tipCalcSwitch(bill) {
+function tipCalcSwitch(bill) {
     var percent;
     switch (bill) {
         case bill < 50:
@@ -470,24 +472,26 @@ console.log(isDesigner);
             break;
     }
 
-    return percent * bill; 
- }
+    return percent * bill;
+}
 
- var bill = [124, 48, 268];
- var tips = [tipCalcSwitch(bill[0]),
-             tipCalcSwitch(bill[1]),
-             tipCalcSwitch(bill[2])];
- var finalBill = [bill[0] + tips[0],
-                  bill[1] + tips[1],
-                  bill[2] + tips[2]];
+var bill = [124, 48, 268];
+var tips = [tipCalcSwitch(bill[0]),
+    tipCalcSwitch(bill[1]),
+    tipCalcSwitch(bill[2])
+];
+var finalBill = [bill[0] + tips[0],
+    bill[1] + tips[1],
+    bill[2] + tips[2]
+];
 
- console.log(tips, finalBill);
+console.log(tips, finalBill);
 
 
 
- /************************
-  * Objects and properties
-  */
+/************************
+ * Objects and properties
+ */
 
 var john = {
     firstName: 'john',
@@ -541,50 +545,33 @@ console.log(john);
  * CODING CHALLENGE 4
  */
 
- var mark = {
+var mark = {
     firstName: "Mark",
     lastName: "Brandanaquitz",
     mass: 90,
     height: 1.82,
     bodyMassIndex: function () {
         this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
     }
- };
- mark.bodyMassIndex();
- console.log(mark);
- var john = {
+};
+var john = {
     firstName: "John",
     lastName: "Smith",
     mass: 97.5,
     height: 1.78,
     bodyMassIndex: function () {
         this.bmi = this.mass / (this.height * this.height);
+        return this.bmi
     }
- };
+};
+// mark.bodyMassIndex();
+// john.bodyMassIndex();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if (john.bodyMassIndex() > mark.bodyMassIndex()) {
+    console.log(john.firstName + " " + john.lastName + " has the highest BMI of: " + john.bmi);
+} else if (john.bodyMassIndex() < mark.bodyMassIndex()) {
+    console.log(mark.firstName + " " + mark.lastName + " has the highest BMI of: " + mark.bmi);
+} else {
+    console.log("It's a tie");
+}
