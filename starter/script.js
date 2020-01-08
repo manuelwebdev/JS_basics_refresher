@@ -582,65 +582,44 @@ if (john.bodyMassIndex() > mark.bodyMassIndex()) {
  * Loops and Iterations
  */
 
- for (var i = 0; i < 10; i++) {
-     console.log(i);
-     
- }
- // i = 0, 0 < 10 true, log i to console, i++
- // i = 1, 0 < 10 true, log i to console, i++
- //...
- // i = 9, 0 < 10 true, log i to console, i++
- // i = 10, 0 < 10 false, exit the loop!
+ //FOR LOOP
 
- var john = ['John', 'Smith', 1990, 'teacher', false];
- console.log(john[0]);
+for (var i = 0; i < 10; i++) {
+    console.log(i);
 
- for (var i = 0; i < john.length; i++) {
-     console.log(john[i]);
-     
- }
+}
+// i = 0, 0 < 10 true, log i to console, i++
+// i = 1, 0 < 10 true, log i to console, i++
+//...
+// i = 9, 0 < 10 true, log i to console, i++
+// i = 10, 0 < 10 false, exit the loop!
 
+// var john = ['John', 'Smith', 1990, 'teacher', false];
+// console.log(john[0]);
 
+// for (var i = 0; i < john.length; i++) {
+//     console.log(john[i]);
 
-
+// }
 
 
+// //  WHILE LOOP
 
+// var i = 0;
+// while (i < john.length) {
+//     console.log(john[i]);
+// }
 
+// Continue and Break statements
 
+var john = ['John', 'Smith', 1990, 'teacher', false, 'blue'];
 
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
