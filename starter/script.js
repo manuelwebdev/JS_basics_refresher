@@ -519,16 +519,50 @@ console.log(jane);
 var john = {
     firstName: 'john',
     lastName: 'smith',
-    birthYear: '1990',
+    birthYear: '1996',
     family: ['jane', 'bob', 'sally'],
     job: 'teacher',
     isMarried: false,
-    calcAge: function (birthYear) {
-        return 2019 - birthYear;
+    calcAge: function () {
+        this.age = 2019 - this.birthYear;
     }
 };
 
-console.log(john.calcAge(1990));
+// console.log(john.calcAge());
+// var age = john.calcAge();
+john.age = john.calcAge();
+console.log(john);
+
+
+
+
+
+/********************************
+ * CODING CHALLENGE 4
+ */
+
+ var mark = {
+    firstName: "Mark",
+    lastName: "Brandanaquitz",
+    mass: 90,
+    height: 1.82,
+    bodyMassIndex: function () {
+        this.bmi = this.mass / (this.height * this.height);
+    }
+ };
+ mark.bodyMassIndex();
+ console.log(mark);
+ var john = {
+    firstName: "John",
+    lastName: "Smith",
+    mass: 97.5,
+    height: 1.78,
+    bodyMassIndex: function () {
+        this.bmi = this.mass / (this.height * this.height);
+    }
+ };
+
+
 
 
 
